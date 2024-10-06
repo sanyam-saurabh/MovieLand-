@@ -5,8 +5,8 @@ import MovieCard from './MovieCard';
 import { useState } from 'react';
 
 
-const API_URL = 'http://www.omdbapi.com?apikey=fe29c3af';
-
+const apiKey = 'fe29c3af'; // Assuming you have a valid API key
+const API_URL = `http://www.omdbapi.com?apikey=${apiKey}`;
 
 
 
@@ -24,7 +24,7 @@ const App = () => {
     }, []);
     return (
         <div className='app'>
-            <h1>MovieLand</h1>
+            <h1>MovieLaLand</h1>
 
             <div className="search">
                 <input
